@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <script defer src="assets/script/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-container">
+        <nav>
+          <span class="logo"><a href="#">Prassetiyo Utomo</a></span>
+          <div class="drop-down">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <ul>
+            <li><a href="#" class="page-scroll">Home</a></li>
+            <li>
+              <a href="#keliling" class="page-scroll">Keliling</a>
+            </li>
+            <li><a href="#luas" class="page-scroll">Luas</a></li>
+            <li>
+              <a href="#profile-card" class="page-scroll">Tentang saya</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="jumbotron">
+        <div class="title">
+          <h1>Kalkulator Segitiga</h1>
+          <p>
+            Menghitung luas dan keliling segitiga lebih mudah menggunakan
+            Kalkulator Segitiga
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="content">
+        <article id="keliling" class="card hidden">
+          <h1>Keliling Segitiga</h1>
+          <img src="./assets/image/segitiga.png" alt="segitiga" />
+          <div class="rumus">
+            <p>Keliling segitiga =</p>
+            <p>sisi a + sisi b + sisi c</p>
+          </div>
+
+          <form method="get">
+            <input
+              type="text"
+              class="form__input"
+              id="a"
+              placeholder="Alas segitiga (a)"
+              required=""
+            />
+            <input
+              type="text"
+              class="form__input"
+              id="b"
+              placeholder="Sisi b segitiga (b)"
+              required=""
+            />
+            <input
+              type="text"
+              class="form__input"
+              id="c"
+              placeholder="Sisi c segitiga (c)"
+              required=""
+            />
+            <input
+              type="text"
+              class="form__input"
+              id="hasil"
+              placeholder="Hasil"
+              readonly
+            />
+          </form>
+          <button type="button" class="hitung" onclick="hitungKeliling()">
+            Hitung
+          </button>
+          <button type="button" class="reset" onclick="resetKeliling()">
+            Reset
+          </button>
+        </article>
+
+        <article id="luas" class="card hidden">
+          <h1>Luas Segitiga</h1>
+          <img src="./assets/image/segitiga.png" alt="segitiga" />
+          <div class="rumus">
+            <p>Luas segitiga =</p>
+            <p>1/2 x alas x tinggi</p>
+          </div>
+
+          <form method="get">
+            <input
+              type="text"
+              class="form__input"
+              id="a1"
+              placeholder="Alas segitiga (a)"
+              required=""
+            />
+            <input
+              type="text"
+              class="form__input"
+              id="t1"
+              placeholder="Tinggi segitiga (t)"
+              required=""
+            />
+            <input
+              type="text"
+              class="form__input"
+              id="hasil1"
+              placeholder="Hasil"
+              readonly
+            />
+          </form>
+          <button type="button" class="hitung" onclick="hitungLuas()">
+            Hitung
+          </button>
+          <button type="button" class="reset" onclick="resetLuas()">
+            Reset
+          </button>
+        </article>
+      </div>
+
+      <aside>
+        <article id="profile-card" class="card hidden">
+          <header>
+            <img src="assets/image/profil.jpg" alt="" />
+            <h1>Prassetiyo Utomo</h1>
+            <p>Web Developer - Gamer - Student</p>
+          </header>
+          <section id="contact">
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <img
+                  class="phone"
+                  src="assets/svg/call-svgrepo-com.svg"
+                  alt="phone-svg"
+                /><span>0822-5823-4336</span>
+              </li>
+              <li>
+                <img
+                  class="email"
+                  src="assets/svg/mail-20-svgrepo-com.svg"
+                  alt="email-svg"
+                /><span>prassetiyo2105@gmail.com</span>
+              </li>
+              <li>
+                <img
+                  class="address"
+                  src="assets/svg/address-location-map-svgrepo-com.svg"
+                  alt="address-svg"
+                /><span>Pemalang - Jawa Tengah</span>
+              </li>
+            </ul>
+          </section>
+          <section id="social">
+            <h3>Social</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/prassetiyo.utomo.94?mibextid=ZbWKwL "
+                  target="_blank"
+                  ><img
+                    class="facebook"
+                    src="assets/svg/facebook-svgrepo-com.svg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/utomoprassetiyo/"
+                  target="_blank"
+                  ><img
+                    class="instagram"
+                    src="assets/svg/instagram-alt-svgrepo-com.svg"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.tiktok.com/@prassetiyoutomo?_t=8cZ152bHoKP&_r=1"
+                  target="_blank"
+                  ><img
+                    class="tiktok"
+                    src="assets/svg/brand-tiktok-sq-svgrepo-com.svg"
+                /></a>
+              </li>
+              <li>
+                <a href="https://wasap.at/HlLY7H" target="_blank"
+                  ><img class="QR" src="assets/image/QR-Code.png"
+                /></a>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </aside>
+    </main>
+    <footer>
+      <p>Copyright &#169; 2023, Prassetiyo Utomo</p>
+      <p>
+        Image by
+        <a
+          target="_blank"
+          href="https://www.freepik.com/free-vector/graphic-design-geometric-wallpaper_7088577.htm#query=geometry&position=1&from_view=search&track=sph"
+        >
+          pikisuperstar</a
+        >
+        on Freepik
+      </p>
+    </footer>
+  </body>
+</html>
