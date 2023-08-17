@@ -451,6 +451,9 @@ footer p:nth-child(2) a {
 }
 
 @media screen and (max-width:596px) {
+
+
+
   .title {
     width: 100%;
     height: 100%;
@@ -496,6 +499,11 @@ footer p:nth-child(2) a {
 }
 
 @media screen and (max-width:456px) {
+  .jumbotron {
+    padding: 1em;
+    font-size: 1em;
+    min-height: 70vh;
+  }
 
   #contact li,
   #social li:nth-child(1) {
